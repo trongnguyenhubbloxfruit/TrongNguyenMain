@@ -2897,7 +2897,7 @@ local library = {}
 
 _G.Color = Color3.fromRGB(0, 0, 255)
 _G.imageLogo = "rbxassetid://88898679316957"
-_G.Logo = "rbxassetid://12940626152"
+_G.Logo = "rbxassetid://88898679316957"
 _G.NameHub = "by tuananhiosdz" -- ชื่อ Hub
 _G.Title = "TrongNguyen Hub" -- คำอธิบาย
 -----------------------------------------------------------------
