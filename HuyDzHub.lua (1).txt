@@ -2777,7 +2777,7 @@ Toggle:OnChanged(function(Value)
         FastAttackTask = nil
     end
 end)
-Toggle = Settings:AddToggle("Toggle", {Title = "Bring Mob", Default = false})
+Toggle = Settings:AddToggle("Toggle", {Title = "TrongNguyen", Default = false})
 Toggle:OnChanged(function(Value)
     getgenv().BringMonster = Value
 end)
@@ -2843,21 +2843,6 @@ Toggle = Settings:AddToggle("Toggle", {Title = "Auto Click ", Description = "Spi
 Toggle:OnChanged(function(Value)
     getgenv().SpinPos = Value
 end)
-import pyautogui
-import time
-
-# thời gian delay giữa mỗi click (giây)
-delay = 0.1
-
-print("Auto Clicker bắt đầu trong 3 giây...")
-time.sleep(3)
-
-try:
-    while True:
-        pyautogui.click()
-        time.sleep(delay)
-except KeyboardInterrupt:
-    print("Đã dừng Auto Clicker")
 spawn(function()
     while wait() do
         if getgenv().SpinPos then
@@ -2937,7 +2922,7 @@ spawn(function()
 end)
 Main = Window:AddTab({ Title = "Tab Farming", Icon = "" })
 Main:AddButton({
-    Title = "discord",
+    Title = "Discord : TrongNguyen Hub ",
     Callback = function()
         pcall(function()
             setclipboard("https://discord.gg/D83E8U8WFK")
@@ -3023,6 +3008,51 @@ spawn(function()
         end
     end
 end)
+elseif (MyLevel >= 2550 and MyLevel <= 2574) or SelectMonster == "Serpent Hunter" then
+			 Mon = "Serpent Hunter"
+			 LevelQuest = 1
+			 NameQuest = "TikiQuest3"
+			 NameMon = "Serpent Hunter"
+			 CFrameQuest = CFrame.new(-16665.19, 104.60, 1579.69)
+			 CFrameMon = CFrame.new(-16521.06, 106.09, 1488.78)
+			 elseif (MyLevel >= 2575 and MyLevel <= 2599) or SelectMonster == "Skull Slayer" then
+			 Mon = "Skull Slayer"
+			 LevelQuest = 2
+			 NameQuest = "TikiQuest3"
+			 NameMon = "Skull Slayer"
+			 CFrameQuest = CFrame.new(-16665.19, 104.60, 1579.69)
+			 CFrameMon = CFrame.new(-16855.04, 122.46, 1478.15)
+			 elseif (MyLevel >= 2600 and MyLevel <= 2624) or SelectMonster == "Reef Bandit" then		 
+			 Mon = "Reef Bandit"
+			 LevelQuest = 1
+			 NameQuest = "SubmergedQuest1"
+			 NameMon = "Reef Bandit"            
+			 CFrameQuest = CFrame.new(10780.739, -2088.410, 9260.411)
+			 CFrameMon = CFrame.new(10899.859, -2145.235, 9279.294) 
+			 elseif (MyLevel >= 2625 and MyLevel <= 2649) or SelectMonster == "Coral Pirate" then			 
+			 Mon = "Coral Pirate"
+			 LevelQuest = 2
+			 NameQuest = "SubmergedQuest1"
+			 NameMon = "Coral Pirate"            
+			 CFrameQuest = CFrame.new(10780.739, -2088.410, 9260.411)	
+			 CFrameMon = CFrame.new(10824.544, -2087.295, 9357.231)
+    	     elseif (MyLevel >= 2650 and MyLevel <= 2674) or SelectMonster == "Sea Chanter" then
+			 Mon = "Sea Chanter"
+			 LevelQuest = 1
+			 NameQuest = "SubmergedQuest2"
+			 NameMon = "Sea Chanter"            
+			 CFrameQuest = CFrame.new(10883.599, -2086.885, 10034.020)
+			 CFrameMon = CFrame.new(10786.387, -2087.373, 10105.262)
+			 elseif (MyLevel >= 2675) or SelectMonster == "Ocean Prophet" then
+			 Mon = "Ocean Prophet"
+			 LevelQuest = 2
+			 NameQuest = "SubmergedQuest2"
+			 NameMon = "Ocean Prophet"            
+			 CFrameQuest = CFrame.new(10883.599, -2086.885, 10034.020)
+			 CFrameMon = CFrame.new(11003.326, -2007.026, 10225.063)
+			 end
+			 end
+			 end
 local Bone = {
     ["Reborn Skeleton"] = CFrame.new(-8769.58984, 142.13063, 6055.27637),
     ["Living Zombie"] = CFrame.new(-10156.4531, 138.652481, 5964.5752),
